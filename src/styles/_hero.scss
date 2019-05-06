@@ -1,0 +1,91 @@
+@import "font.scss";
+
+.hero {
+  &__video {
+    width: 100%;
+    min-height: 183px;
+    background: transparent url("../Assets/Images/video-list-0.jpg") no-repeat 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  // &__play {
+  //   margin: 0px 16px;
+  //   display: flex;
+  //   width: 87%;
+  //   position: absolute;
+  //   top: 47%;
+  //   align-items: center;
+
+  //   &--scroll {
+  //     background-color: rgba(0, 0, 0, 0.4);
+  //     border-radius: 4px;
+  //     padding: 10px 5px;
+  //     display: flex;
+  //     margin: 0px 16px;
+  //     width: 100%;
+
+  //     hr {
+  //       width: 100%;
+  //       height: 1px;
+  //       margin: auto 10px;
+  //       border-color: black;
+  //       background: black;
+  //     }
+
+  //     p {
+  //       display: none;
+  //     }
+  //   }
+  //   &--stuffs {
+  //     background-color: rgba(0, 0, 0, 0.4);
+  //     border-radius: 4px;
+  //     padding: 4px 5px;
+  //     display: flex;
+  //   }
+
+  //   #play {
+  //     background-color: rgba(0, 0, 0, 0.4);
+  //     margin: 0px 0px 0px 16px;
+  //     padding: 4px 10px;
+  //     border-radius: 4px;
+  //   }
+
+  //   #fullscreen,
+  //   #volume {
+  //     margin: 0px 8px;
+  //   }
+  // }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    #bike {
+      background-color: black;
+    }
+    &__video {
+      width: 91.2%;
+      margin: 0 auto;
+      display: block;
+      background-color: black;
+    }
+
+    &__play {
+      top: 42%;
+      margin: 0px 0px 0px 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    &__video {
+      width: 65.56%;
+    }
+    #clip {
+      font-size: 2vw;
+    }
+  }
+}
