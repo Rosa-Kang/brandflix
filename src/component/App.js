@@ -7,8 +7,6 @@ import NewComment from "./NewComment";
 import CommentList from "./CommentList";
 import VideoList from "./VideoList";
 
-//block__element--modifier--state
-
 class App extends Component {
   render() {
     return (

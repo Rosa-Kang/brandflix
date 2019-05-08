@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-// import Views from "../Assets/Icons/SVG/Icon-views.svg";
-// import Likes from "../Assets/Icons/SVG/Icon-likes.svg";
-// import Play from "../Assets/Icons/SVG/Icon-play.svg";
-// import Fullscreen from "../Assets/Icons/SVG/Icon-fullscreen.svg";
-// import Volume from "../Assets/Icons/SVG/Icon-volume.svg";
+import Views from "../Assets/Icons/SVG/Icon-views.svg";
+import Likes from "../Assets/Icons/SVG/Icon-likes.svg";
+import Play from "../Assets/Icons/SVG/Icon-play.svg";
+import Fullscreen from "../Assets/Icons/SVG/Icon-fullscreen.svg";
+import Volume from "../Assets/Icons/SVG/Icon-volume.svg";
 
 class Hero extends Component {
   state = {
@@ -29,24 +29,22 @@ class Hero extends Component {
   };
   render() {
     return (
-      <section className="hero">
-        <div id="bike">
-          <video
-            className="hero__video"
-            poster="./Assets/Images/video-list-0.jpg"
-            controls
-          />
+      <section id="background">
+        <div className="hero">
+          <div className="hero__play">
+            <video poster="./Assets/Images/video-list-0.jpg" />
+          </div>
+          <div className="hero__scroll">
+            <img id="play" src={Play} />
+            <div className="hero__scroll--hr">
+              <hr /> <p>0:00 / 0:42</p>
+            </div>
+            <div className="hero__scroll--stuffs">
+              <img id="fullscreen" src={Fullscreen} />
+              <img id="volume" src={Volume} />
+            </div>
+          </div>
         </div>
-        {/* <div className="hero__play">
-          <img id="play" src={Play} />
-          <div className="hero__play--scroll">
-            <hr /> <p>0:00 / 0:42</p>
-          </div>
-          <div className="hero__play--stuffs">
-            <img id="fullscreen" src={Fullscreen} />
-            <img id="volume" src={Volume} />
-          </div>
-        </div> */}
       </section>
     );
   }

@@ -14,6 +14,9 @@ body {
             flex-direction: row;
     margin: 0px 180px 0px 156px;
   }
+  .boxClip {
+    width: 76%;
+  }
 }
 
 /* Font*/
@@ -184,35 +187,97 @@ body {
   src: url("../Assets/globalfont/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-.hero__video {
-  width: 100%;
-  min-height: 183px;
-  background: transparent url("../Assets/Images/video-list-0.jpg") no-repeat 0 0;
+#background {
+  background-color: black;
+}
+
+.hero {
+  background-color: black;
+  background-image: url("../Assets/Images/video-list-0.jpg");
   background-size: cover;
+  height: 57.5vw;
+  background-position: center;
+  position: relative;
+}
+
+.hero__play {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__scroll {
+  border-radius: 4px;
+  padding: 10px 5px 10px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  position: absolute;
+  bottom: 1px;
+}
+
+.hero__scroll--hr {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 5px;
+}
+
+.hero__scroll--hr hr {
+  height: 1px;
+  margin: auto 10px;
+  border-color: black;
+  background: black;
+  width: 100%;
+}
+
+.hero__scroll--hr p {
+  display: none;
+}
+
+.hero__scroll--stuffs {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 4px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__scroll #play {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0px 0px 0px 16px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.hero__scroll #fullscreen,
+.hero__scroll #volume {
+  margin: 0px 8px;
 }
 
 @media only screen and (min-width: 768px) {
-  .hero #bike {
-    background-color: black;
+  .hero {
+    margin: 0px 34px;
+    height: 52.1vw;
   }
-  .hero__video {
-    width: 91.2%;
-    margin: 0 auto;
-    display: block;
-    background-color: black;
-  }
-  .hero__play {
-    top: 42%;
-    margin: 0px 0px 0px 40px;
+  .hero__scroll {
+    padding: 10px 5px 10px 20px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .hero__video {
-    width: 65.56%;
+  .hero {
+    margin: 0px 248px;
+    height: 37.5vw;
   }
-  .hero #clip {
-    font-size: 2vw;
+  .hero__scroll {
+    padding: 10px 5px 10px 35px;
   }
 }
 
@@ -288,7 +353,7 @@ body {
 }
 
 .clip__comment {
-  font-size: 3.8vw;
+  font-size: 13px;
   border-top: 1px solid #afafaf;
   padding-top: 24px;
 }
@@ -483,7 +548,7 @@ body {
     height: 50px;
   }
   .newComment__new--comment textarea {
-    width: 86%;
+    width: 85.25%;
     height: 6px;
   }
 }
@@ -573,7 +638,7 @@ body {
 
 @media only screen and (min-width: 1280px) {
   .users__comment--mention {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -674,17 +739,16 @@ body {
     margin: 0px;
   }
   .videos h4 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .videos__next {
     font-size: 14px;
   }
   .videos__list {
-    width: 472px;
-    margin: 26px 0px;
+    width: 285px;
+    margin: 29px 0px;
   }
   .videos__list--detail {
-    width: 44%;
     padding: 0px;
   }
 }

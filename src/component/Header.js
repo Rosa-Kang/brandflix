@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src={Logo} />
+        <img id="logo" src={Logo} />
       </div>
       <div className="header__toRight">
         <input className="header__search" placeholder="Search" />
